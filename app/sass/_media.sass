@@ -1,0 +1,423 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 15px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px)
+  .subscribe-box
+    width: 291px
+    height: 430px
+    padding: 15px 20px 33px
+    &__status
+      width: 156px
+      height: 35px
+      font-size: 17px
+      margin: 0 auto 27px
+    &__price
+      font-size: 23px
+      min-height: 67px
+      h6
+        font-size: 16px
+      .sum
+        font-size: 32px
+    &__line
+      margin: 0 auto 10px
+      &:before
+        width: 225px
+        height: 1px
+        top: 57%
+      span
+        font-size: 16px
+        padding: 0 8px
+        letter-spacing: -0.95px
+        line-height: 19px
+
+  .list-check
+    font-size: 16px
+
+
+  .btn-order
+    width: 214px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 920px)
+  .subscribe-box
+    margin: 0 auto
+
+@media only screen and (max-width: 870px)
+  .box-category
+    margin: 0
+    min-height: auto
+
+  .item-dropDown
+    position: relative
+    .box-category
+      width: 100%
+      height: auto
+      min-height: auto
+      position: relative
+      background: #fff
+      left: 0
+      top: 0
+      border: none
+      .category-title
+        display: none
+
+  .list-category .click
+    > a
+      background: #7A7A7A
+      color: #fff
+      .icon
+        svg
+          transform: rotate(90deg)
+          path
+            fill: #fff
+      &:hover
+        background: #7A7A7A
+        color: #fff
+        .icon
+          svg
+            transform: rotate(90deg)
+            path
+              fill: #fff
+
+  .item-dropDown.click ~ .item-dropDown
+    display: none
+
+  .box-category-2
+    .list-category .click
+      > a
+        background: #9B9B9B
+        color: #fff
+        .icon
+          svg
+            transform: rotate(90deg)
+            path
+              fill: #fff
+        &:hover
+          background: #9B9B9B
+          color: #fff
+          .icon
+            svg
+              transform: rotate(90deg)
+              path
+                fill: #fff
+
+  .new-niche__wrapper
+    width: 100%
+    padding: 0
+    margin: 20px 0 0
+
+@media only screen and (max-width: 768px)
+  h1
+    font-size: 30px
+
+  h2
+    font-size: 22px
+
+  .logo
+    font-size: 33px
+    letter-spacing: -2.508px
+
+  header
+    padding: 10px 0 9px
+    margin: 0 0 20px
+
+  .btn-edit
+    width: 23px
+    height: 23px
+    min-width: 23px
+
+  .btn-exit
+    width: 28px
+    height: 33px
+
+  .content-wrapper
+    margin: 32px 0 0
+    .line-title
+      margin: 0 0 25px
+
+  .lift-up
+    margin: 0 0 47px
+
+  textarea
+    font-size: 14px
+
+  label
+    margin: 0 0 7px
+
+  select
+    padding: 22px 145px 16px 7px
+    width: 305px
+    height: 55px
+    font-size: 14px
+    background-position: 55% center
+
+  .line-subtitle
+    font-size: 21px
+    padding: 23px 22px
+    border-radius: 0
+    letter-spacing: -1.53462px
+    margin: 0 0 12px
+
+  .subscribe-section
+    margin: 41px 0 26px
+
+  .subscribe-about
+    h2
+      font-size: 30px
+    .line-title
+      margin: 0 0 32px
+
+  .subscribe-about__box
+    width: 100%
+    padding: 0
+    margin: 0 0 32px
+    h3
+      font-size: 25px
+      margin: 0 0 19px
+    .text
+      max-width: none
+      letter-spacing: -0.413636px
+      font-size: 13px
+
+
+@media only screen and (max-width: 576px)
+  .mail
+    display: none
+
+  .panel_heading
+    border-radius: 0
+
+  .block_title
+    padding: 20px 5px 13px 16px
+    min-height: 70px
+    font-size: 14px
+    .box-right
+      width: auto
+      a
+        margin: 0 0 0 11px
+        &:first-child
+          margin: 0
+    .btn-delete
+      width: 21px
+      height: 21px
+
+  .btn-pause
+    width: 26px
+    height: 26px
+
+  .btn-delete
+    width: 21px
+    height: 21px
+
+  .number-application
+    width: 30px
+    height: 30px
+
+  .category-niche__text
+    font-size: 14px
+    width: calc(100% - 30px)
+    padding: 16px 13px 20px 20px
+
+  .category-niche
+    padding: 0 0 0 22px
+    margin: 0 0 19px
+    &:before
+      font-size: 14px
+      letter-spacing: -1.53462px
+    .btn-white
+      margin: 14px 0 0
+
+  .btn-white
+    width: 135px
+    height: 30px
+
+  .btn
+    font-size: 16px
+    letter-spacing: 0.008px
+
+  .form-answer
+    margin: 20px 0 0
+    h6
+      display: block
+    label
+      margin: 0 0 10px
+      width: calc(100% - 30px)
+      textarea
+        font-size: 14px
+        padding: 8px 8px 8px 9px
+    button
+      width: 138px
+      height: 39px
+
+  .add-category
+    margin: 0 0 29px
+    .line-title
+      display: none
+
+  .box-category__wrapper
+    justify-content: center
+
+  .new-niche__wrapper
+    font-size: 14px
+    h3
+      font-size: 22px
+      margin: 0 0 34px
+
+  .form-add-niche
+    label
+      font-size: 16px
+      margin: 0 0 13px
+    input
+      width: 171px
+      height: 25px
+    button
+      width: 213px
+      height: 39px
+
+  .box-attention
+    margin: 19px 0 28px
+    padding: 22px 12px 25px
+
+  input
+    font-size: 14px
+
+  .selection-result
+    margin: 28px 0 15px
+    font-size: 16px
+
+  .content-category, .content-subscribe
+    .btn-exit
+      display: none
+
+
+
+
+@media only screen and (max-width: 480px)
+  header
+    .btn
+      display: none
+
+  .links-money, .user-links
+    display: flex
+
+  .links-money
+    margin: 0 13px 0 auto
+
+  .lift-up
+    .container
+      padding: 0
+    .line-title
+      padding: 0 20px
+      .btn
+        position: relative
+        width: 43px
+        height: 43px
+        &:before
+          content: ''
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%,-50%)
+          width: 19px
+          height: 19px
+          background: url("../img/plus.svg") no-repeat center
+            size: contain
+        span
+          display: none
+
+  .block_hover
+    padding: 8px 5px 25px
+
+
+  .in
+    border: none
+
+  .form-answer
+    justify-content: flex-start
+    label
+      width: 100%
+    .btn-delete
+      order: 1
+      margin: 0 0 0 7px
+
+  .modal__div
+    width: 290px
+    .modal__wrapper
+      padding: 65px 28px 37px
+      height: 410px
+      h2
+        font-size: 22px
+        margin: 0 auto 39px
+      button
+        width: 155px
+        height: 39px
+        min-height: 39px
+
+  .modal-wrapper__text
+    font-size: 14px
+    line-height: 28px
+
+  .header-mobile
+    display: block
+    margin: 0
+
+  .login-box
+    width: 284px
+    padding: 32px 22px 27px
+    .logo
+      margin: 0 auto 46px
+
+  .form
+    max-width: none
+    input
+      font-size: 11px
+    label
+      max-width: 148px
+      margin: 0 auto 20px
+    button
+      width: 140px
+      height: 39px
+      margin: 27px auto 0
+      font-weight: normal
+      letter-spacing: -0.0666664px
+    .btn
+      font-weight: normal
+      letter-spacing: -0.0666664px
+
+  .line-wrapper
+    font-size: 11px
+    margin: 50px auto 0
+
+
+  .links-red
+    font-size: 11px
+    margin: 30px auto 0
+
+  .description-login
+    font-size: 16px
+
+  .form-registration
+    label
+      margin: 0 auto 20px
+    button
+      width: 100%
+    .subscribe-box__line
+      margin: 21px auto
+    .btn
+      height: 39px
+
+  .form-password button
+    margin: 73px auto 35px
+
+  .notification
+    font-size: 16px
+
+

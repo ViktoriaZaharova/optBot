@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>OptBot</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">OptBot</a>
+        <a href="#payment__modal" class="btn btn-accent open_modal">Оплата</a>
+
+        <a href="#payment__modal" class="links-money open_modal">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M288,320c88.359,0,160-71.633,160-160S376.359,0,288,0c-0.016,0-0.016,0-0.031,0H117.328
+			c-5.891,0-10.656,4.773-10.656,10.664v287.992h-32c-5.891,0-10.672,4.781-10.672,10.688C64,315.219,68.781,320,74.672,320h32
+			v42.656h-32c-5.891,0-10.672,4.781-10.672,10.688C64,379.219,68.781,384,74.672,384h32v117.344
+			c0,5.875,4.766,10.656,10.656,10.656S128,507.219,128,501.344V384h181.328c5.891,0,10.672-4.781,10.672-10.656
+			c0-5.906-4.781-10.688-10.672-10.688H128V320H288z M128,21.336h159.969H288c18.734,0,36.891,3.664,53.969,10.883
+			c16.516,6.984,31.344,16.984,44.078,29.727c12.75,12.742,22.75,27.578,29.734,44.086C423,123.109,426.672,141.273,426.672,160
+			s-3.672,36.891-10.891,53.969c-6.984,16.508-16.984,31.344-29.734,44.086c-12.734,12.742-27.562,22.742-44.078,29.727
+			C324.891,295,306.734,298.656,288,298.656H128V21.336z"/>
+	</g>
+</g>
+</svg>
+        </a>
+        <a href="#" class="user-links">
+            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                <path d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"/>
+            </svg>
+        </a>
+    </div>
+</header>
+
+<div class="content content-category">
+    <div class="container">
+
+        <div class="line-title">
+            <h1>Добавление новой ниши</h1>
+
+            <a href="mailto:Eduard01petrov@mail.ru @eduard.petrov"
+               class="mail">Eduard01petrov@mail.ru @eduard.petrov</a>
+            <a href="#" class="btn-exit"><img src="img/exit.png" alt=""></a>
+        </div>
+
+
+    </div>
+
+    <div class="content-wrapper">
+
+        <div class="add-category">
+            <div class="container">
+                <div class="line-title"><h2>Выберите категорию</h2></div>
+
+                <div class="box-category__wrapper">
+
+                    <div class="box-category box-category-1">
+                        <div class="category-title">Категория</div>
+                        <ul class="list-category">
+
+                            <li class="item-dropDown">
+                                <a href="#">Транспорт
+                                    <span class="icon">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+                  fill="#FFFFFE"/>
+        </svg>
+                                </span>
+                                </a>
+
+                                <div class="box-category box-category-2">
+                                    <div class="category-title">Транспорт</div>
+                                    <ul class="list-category">
+                                        <li><a href="#">Автомобили</a></li>
+                                        <li><a href="#">Мотоциклы и мототехника</a></li>
+                                        <li><a href="#">Водный транспорт</a></li>
+
+                                        <li class="item-dropDown"><a href="#">Грузовики и спецтехника <span class="icon">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+          fill="#FFFFFE"/>
+</svg>
+                        </span></a>
+
+                                            <div class="box-category box-category-3">
+                                                <div class="category-title">Грузовики и спецтехника</div>
+                                                <ul class="list-category">
+                                                    <li><a href="#">Автобусы</a></li>
+                                                    <li><a href="#">Бульдозеры</a></li>
+                                                    <li><a href="#">Сельхозтехника</a></li>
+                                                    <li><a href="#">Строительная техника</a></li>
+                                                    <li><a href="#">Эскаваторы</a></li>
+                                                    <li><a href="#">Прицепы</a></li>
+                                                    <li><a href="#">Погрузчики</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li><a href="#">Запчасти и аксессуары</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="item-dropDown">
+                                <a href="#">Недвижимость
+                                    <span class="icon">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+          fill="#FFFFFE"/>
+</svg>
+                        </span>
+                                </a>
+                                <div class="box-category box-category-2">
+                                    <div class="category-title">Недвижимость</div>
+                                    <ul class="list-category">
+                                        <li><a href="#">Автомобили</a></li>
+                                        <li><a href="#">Мотоциклы и мототехника</a></li>
+                                        <li><a href="#">Водный транспорт</a></li>
+                                        <li><a href="#">Грузовики и спецтехника</a></li>
+                                        <li><a href="#">Запчасти и аксессуары</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="item-dropDown">
+                                <a href="#">Транспорт
+                                    <span class="icon">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+                  fill="#FFFFFE"/>
+        </svg>
+                                </span>
+                                </a>
+
+                                <div class="box-category box-category-2">
+                                    <div class="category-title">Транспорт</div>
+                                    <ul class="list-category">
+                                        <li><a href="#">Автомобили</a></li>
+                                        <li><a href="#">Мотоциклы и мототехника</a></li>
+                                        <li><a href="#">Водный транспорт</a></li>
+
+                                        <li class="item-dropDown"><a href="#">Грузовики и спецтехника</a>
+                                            <div class="box-category box-category-3">
+                                                <div class="category-title">Грузовики и спецтехника</div>
+                                                <ul class="list-category">
+                                                    <li><a href="#">Автобусы</a></li>
+                                                    <li><a href="#">Бульдозеры</a></li>
+                                                    <li><a href="#">Сельхозтехника</a></li>
+                                                    <li><a href="#">Строительная техника</a></li>
+                                                    <li><a href="#">Эскаваторы</a></li>
+                                                    <li><a href="#">Прицепы</a></li>
+                                                    <li><a href="#">Погрузчики</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li><a href="#">Запчасти и аксессуары</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="item-dropDown">
+                                <a href="#">Недвижимость
+                                    <span class="icon">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+          fill="#FFFFFE"/>
+</svg>
+                        </span>
+                                </a>
+                                <div class="box-category box-category-2">
+                                    <div class="category-title">Недвижимость</div>
+                                    <ul class="list-category">
+                                        <li><a href="#">Автомобили</a></li>
+                                        <li><a href="#">Мотоциклы и мототехника</a></li>
+                                        <li><a href="#">Водный транспорт</a></li>
+                                        <li><a href="#">Грузовики и спецтехника</a></li>
+                                        <li><a href="#">Запчасти и аксессуары</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li><a href="#" class="new-niche">Предложить свою нишу <span class="icon">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7.6721 5.65314L1.93491 0.342779C1.49211 -0.11426 0.774364 -0.11426 0.332099 0.342779C-0.1107 0.794378 -0.1107 1.52346 0.332099 1.97506L5.26416 6.54545L0.332099 11.1158C-0.1107 11.5674 -0.1107 12.2965 0.332099 12.7481C0.774364 13.2052 1.49211 13.2052 1.93491 12.7481L7.6721 7.43777C7.91189 7.19293 8.01739 6.86647 7.99768 6.54545C8.01739 6.22444 7.91189 5.89798 7.6721 5.65314Z"
+          fill="#FFFFFE"/>
+</svg>
+                        </span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="new-niche__wrapper">
+                        <div class="box-text">
+                            <p>Если вы не нашли нишу для своих товаров, то можете предложить её сами. Модератор примет
+                                решение о добавлении, и мы оповестим вас.</p>
+                            <p>Добавьте нишу, поднишу и подкатегорию аналогично примерам ниже или посмотрите
+                                <a href="#" class="links">видеоинструкцию:</a></p>
+                        </div>
+
+                        <div class="box-attention">
+                            <ul>
+                                <li>Вы хотите добавить категорию: Груша</li>
+                                <li>Тогда сперва определите нишу: Сельхоз-продукция</li>
+                                <li>Затем поднишу: Фрукты</li>
+                                <li>И, наконец, категорию: Груша</li>
+
+                            </ul>
+                            <p>В итоге вы создадите категорию: Сельхоз продукция/ Фрукты/ Груша</p>
+                        </div>
+
+                        <h3>Создайте нишу</h3>
+
+                        <form method="post" class="form form-add-niche">
+
+                            <label>
+                                <span class="form-title">Ниша</span>
+                                <input type="text" name="name">
+                            </label>
+                            <label>
+                                <span class="form-title">Подниша</span>
+                                <input type="text" name="name">
+                            </label>
+                            <label>
+                                <span class="form-title">Подкатегория</span>
+                                <input type="text" name="name">
+                            </label>
+
+                            <div class="selection-result">
+                                <h6>Ваша ниша: </h6>
+                                <span>Lorem/Ipsum/Lorem</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-accent">Предложить нишу</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lift-up">
+        <div class="container">
+            <div class="line-title">
+                <h2>Мои подниши</h2>
+
+            </div>
+
+            <div class="line-subtitle">
+                <p>Название ниши</p>
+                <p>Заявки</p>
+            </div>
+
+            <div class="panel_heading panel_heading-new">
+                <div class="block_title">
+                    <h4>Сельхоз продукция/ Овощи/ Картофель</h4>
+                    <div class="box-right">
+                        <div class="number-application">0</div>
+                        <a href="#" class="btn-pause d-none"><img src="img/pause.svg" alt=""></a>
+                        <a href="#" class="btn-delete d-none"><img src="img/delete.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="block_hover">
+                    <div class="category-niche">
+                        <div class="category-niche__text">Ред Скарлетт. 100 тонн. По 15р/кило. Такой-то фракции.
+                            Омск
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <h6>Ваше предложение:</h6>
+                            <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                            </label>
+
+                            <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Картофель молодой импортный, 200 тонн. В Казань
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Фургон картошки, в Ярославль, для поставок в сетевые
+                            магазины. Ежедневно будем брать
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel_heading">
+                <div class="block_title">
+                    <h4>Сельхоз продукция/ Овощи/ Помидор</h4>
+                    <div class="box-right">
+                        <div class="number-application">6</div>
+                        <a href="#" class="btn-delete d-none"><img src="img/delete.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="block_hover">
+                    <div class="category-niche">
+                        <div class="category-niche__text">Ред Скарлетт. 100 тонн. По 15р/кило. Такой-то фракции.
+                            Омск
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Картофель молодой импортный, 200 тонн. В Казань
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Фургон картошки, в Ярославль, для поставок в сетевые
+                            магазины. Ежедневно будем брать
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel_heading">
+                <div class="block_title">
+                    <h4>Сельхоз продукция/ Фрукты/ Яблоко</h4>
+                    <div class="box-right">
+                        <div class="number-application">6</div>
+                        <a href="#" class="btn-delete d-none"><img src="img/delete.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="block_hover">
+                    <div class="category-niche">
+                        <div class="category-niche__text">Ред Скарлетт. 100 тонн. По 15р/кило. Такой-то фракции.
+                            Омск
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Картофель молодой импортный, 200 тонн. В Казань
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+
+                    <div class="category-niche">
+                        <div class="category-niche__text">Фургон картошки, в Ярославль, для поставок в сетевые
+                            магазины. Ежедневно будем брать
+                        </div>
+                        <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+
+                        <a href="#" class="btn-white btn btn-answer">Ответить</a>
+
+                        <form method="post" class="form-answer">
+                            <div class="form-group">
+                                <label>
+                                        <textarea name="message"
+                                                  placeholder="Введите текст с предложением на эту заявку"></textarea>
+                                </label>
+
+                                <a href="#" class="btn-delete"><img src="img/delete.svg" alt=""></a>
+                            </div>
+                            <button class="btn btn-accent" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal btn удалить после проверки и прекрепить окна к нужным событиям-->
+<div class="container">
+    <a href="#added__modal" class="btn btn-accent open_modal">Добавлено!</a>
+    <a href="#sent__modal-2" class="btn btn-accent open_modal">Отправлено!</a>
+</div>
+
+<div class="modal__div" id="payment__modal">
+    <div class="modal__wrapper">
+        <h2>Подписка оплачена!</h2>
+
+        <div class="modal-wrapper__text">
+            <p>Рады, что вы с нами. Желаем самых качественных заявок!</p>
+        </div>
+
+        <button class="btn btn-accent modal__close">Закрыть</button>
+    </div>
+</div>
+
+<div class="modal__div" id="sent__modal">
+    <div class="modal__wrapper">
+        <h2>Отправлено!</h2>
+
+        <div class="modal-wrapper__text">
+            <p>Ваше предложение //Предложение// на заявку //Заявка// отправлено. Если покупателю понравится ваше
+                предложение, он свяжется с вами напрямую в телеграмм</p>
+        </div>
+
+        <button class="btn btn-accent modal__close">Закрыть</button>
+    </div>
+</div>
+
+
+<div class="modal__div" id="sent__modal-2">
+    <div class="modal__wrapper">
+        <h2>Отправлено!</h2>
+
+        <div class="modal-wrapper__text">
+            <p>Ваше предложение ниши отправлено на моедрацию. После одобрения модератором, эта ниша сразу появится в списке "Мои подниши". И вы начнёте получать по ней заявки.</p>
+        </div>
+
+        <button class="btn btn-accent modal__close">Закрыть</button>
+    </div>
+</div>
+
+
+<div class="modal__div" id="added__modal">
+    <div class="modal__wrapper">
+        <h2>Добавлено!</h2>
+
+        <div class="modal-wrapper__text">
+            <p>Категория //Категория// добавлена в список "Мои подниши".</p>
+        </div>
+
+        <button class="btn btn-accent modal__close">Закрыть</button>
+    </div>
+</div>
+
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
