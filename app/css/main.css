@@ -616,8 +616,7 @@ form, .form-group {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -1.44762px;
-    color: #000000;
-    display: none; }
+    color: #000000; }
 
 .form-answer.open {
   display: -webkit-box;
@@ -1130,29 +1129,12 @@ form, .form-group {
   margin: 37px auto 0; }
 
 .form {
-  max-width: 264px;
   width: 100%;
   margin: 0 auto; }
   .form label {
-    margin: 0 0 28px; }
+    margin: 0 0 16px; }
     .form label:last-child {
       margin: 0; }
-  .form input {
-    color: #4A4A4A;
-    padding: 0 0 8px;
-    border-bottom: 1px solid #000000; }
-    .form input::-webkit-input-placeholder {
-      color: #4A4A4A; }
-    .form input::-moz-placeholder {
-      color: #4A4A4A; }
-    .form input::-ms-input-placeholder {
-      color: #4A4A4A; }
-    .form input::placeholder {
-      color: #4A4A4A; }
-  .form button {
-    margin: 37px auto 0;
-    width: 165px;
-    height: 46px; }
   .form .subscribe-box__line {
     width: 100%;
     min-height: auto;
@@ -1162,14 +1144,37 @@ form, .form-group {
     .form .subscribe-box__line span {
       background: #fff; }
 
+.form-login {
+  max-width: 264px; }
+  .form-login label {
+    margin: 0 0 28px; }
+    .form-login label:last-child {
+      margin: 0; }
+  .form-login input {
+    border-bottom: 1px solid #000000;
+    padding: 0 0 8px;
+    color: #4A4A4A; }
+    .form-login input::-webkit-input-placeholder {
+      color: #4A4A4A; }
+    .form-login input::-moz-placeholder {
+      color: #4A4A4A; }
+    .form-login input::-ms-input-placeholder {
+      color: #4A4A4A; }
+    .form-login input::placeholder {
+      color: #4A4A4A; }
+  .form-login button {
+    margin: 37px auto 0;
+    height: 46px;
+    width: 100%; }
+  .form-login a.btn {
+    width: 100%;
+    height: 46px; }
+
 .description-login {
   text-align: center;
   margin: 0 auto 44px;
   max-width: 265px;
   font-size: 20px; }
-
-.form-registration button {
-  width: 100%; }
 
 .form-registration a.btn {
   margin: 0 auto; }
@@ -1395,8 +1400,6 @@ form, .form-group {
     letter-spacing: 0.008px; }
   .form-answer {
     margin: 20px 0 0; }
-    .form-answer h6 {
-      display: block; }
     .form-answer label {
       margin: 0 0 10px;
       width: calc(100% - 30px); }
@@ -1511,18 +1514,18 @@ form, .form-group {
     max-width: none; }
     .form input {
       font-size: 11px; }
-    .form label {
-      max-width: 148px;
-      margin: 0 auto 20px; }
-    .form button {
-      width: 140px;
-      height: 39px;
-      margin: 27px auto 0;
-      font-weight: normal;
-      letter-spacing: -0.0666664px; }
     .form .btn {
       font-weight: normal;
       letter-spacing: -0.0666664px; }
+  .form-login label {
+    max-width: 148px;
+    margin: 0 auto 20px; }
+  .form-login button {
+    width: 140px;
+    height: 39px;
+    margin: 27px auto 0;
+    font-weight: normal;
+    letter-spacing: -0.0666664px; }
   .line-wrapper {
     font-size: 11px;
     margin: 50px auto 0; }
