@@ -56,27 +56,31 @@ $('.list-category li a').on('click', function (e) {
 
     $('.new-niche__wrapper').fadeOut();
 
-    $('.box-category-1 .list-category li').removeClass('click');
-
+    $('.box-category .list-category li').removeClass('click');
     $(this).parents('li').addClass('click');
 });
 
-$('.box-category-1 .list-category li a').on('click', function (e) {
-    e.preventDefault();
-    $('.box-category-2').removeClass('active');
-    // $('.box-category-1 .list-category li').removeClass('click');
+// $('.box-category .list-category li a').click(function () {
+//    $(this).next('.box-category').addClass('active');
+//    $('.box-category').removeClass('active');
+// });
 
-    $(this).parents('.item-dropDown').find('.box-category-2').addClass('active');
-
-});
-
-$('.box-category-2 .list-category li a').on('click', function (e) {
-    e.preventDefault();
-    $('.box-category-3').removeClass('active');
-    // $('.box-category-2 .list-category li').removeClass('click');
-    $(this).parents('.item-dropDown').find('.box-category-3').addClass('active');
-
-});
+// $('.box-category-1 .list-category li a').on('click', function (e) {
+//     e.preventDefault();
+//     $('.box-category-2').removeClass('active');
+//     // $('.box-category-1 .list-category li').removeClass('click');
+//
+//     $(this).parents('.item-dropDown').find('.box-category-2').addClass('active');
+//
+// });
+//
+// $('.box-category-2 .list-category li a').on('click', function (e) {
+//     e.preventDefault();
+//     $('.box-category-3').removeClass('active');
+//     // $('.box-category-2 .list-category li').removeClass('click');
+//     $(this).parents('.item-dropDown').find('.box-category-3').addClass('active');
+//
+// });
 // category
 
 $('.new-niche').click(function (e) {
